@@ -1,34 +1,25 @@
 class Sorter {
   constructor(sortMethod) {
-    // your implementation
     this.massiv=[];
    this.compareFunction = null;
   }
 
   add(element) {
-    // your implementation
     this.massiv.push(element);
   }
 
   at(index) {
-    // your implementation
     return this.massiv[index];
   }
 
   get length() {
-    // your implementation
     return this.massiv.length;
   }
-
   toArray() {
-    // your implementation
     return this.massiv;
-   
   }
-
   sort(indices) 
 {
-    // your implementation
      this.massiv2=[];
       indices = indices.sort(function(a,b){
          return a-b
@@ -49,7 +40,6 @@ class Sorter {
 }
 
   setComparator(compareFunction) {
-    // your implementation
      this.compareFunction = compareFunction;   
   }
 }
